@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+</head>
+
+
+
+<body>
+    <div class="MAINDIV">
+        <header>
+            <a asp-action="">WEBBBMIN</a>
+        </header>
+        <div class="maincontent">
+            @RenderBody()
+        </div>
+        <footer>
+            Boolean signals minimizer
+        </footer>
+    </div>
+</body>
+
+
+
+</html>

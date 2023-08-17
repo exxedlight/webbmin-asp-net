@@ -1,0 +1,32 @@
+﻿@model WebApplication1.Models.TableModel;
+@{
+    ViewData["Title"] = "Table";
+}
+
+
+
+<link rel="stylesheet" href="~/css/table.css">
+<h1 class="TextMainItemH">Table input page</h1>
+
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+
+<form class="TableForm" method="POST" asp-action="Min">
+    
+    <p class="TextMainItemP">There are a field to print a signals number(less that 20) and press a button ``CREATE``</p>
+    <p class="TextMainItemP">Tool will create a full-table for this signals numbers and you may to edit a function with printing a 0 or 1</p>
+    <p class="TextMainItemP">After entering, please, press a button down the page. Make sure that your table has only a correct data! You can delete some sets, but don`t damage it`s form!</p>
+    
+
+    <div class="InputsBlock">
+        <div>
+            <p placeholder="N" class="UserInput1" name="user_N"></p>
+        </div>
+        
+        @Html.TextAreaFor(m => m.Table, new {placeholder="Table...", @class="UserInput2"})
+
+        <div class="ButtonsChoose">
+            <button class="Button">MINIMIZE IT</button>
+        </div>
+    </div>
+</form>

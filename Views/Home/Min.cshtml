@@ -1,0 +1,11 @@
+﻿@model WebApplication1.Models.TableModel
+@{
+    ViewData["Title"] = "Result";
+}
+
+<link rel="stylesheet" href="~/css/vector.css"/>
+
+<div class="MinContent">
+    <h1 class="TextMainItemH">Result page</h1>
+    @Html.TextAreaFor(m => m.CalcResult, new {@class="TextAreaResult"})
+</div>
